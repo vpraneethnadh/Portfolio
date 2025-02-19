@@ -221,6 +221,57 @@ body {
     color: #1f242d;
 }
 
+/* Add to existing CSS */
+.about-section {
+    padding: 100px 10% 50px;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0ef;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    color: #0ef;
+}
+
+.skill-category {
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.skill-category h3 {
+    color: #0ef;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-outline-primary {
+    position: relative;
+    margin: 50px auto;
+    left: auto;
+    transform: none;
+    display: block;
+    width: fit-content;
+}
+
 @keyframes slideRight {
     0% {
         transform: translateX(-100px);
