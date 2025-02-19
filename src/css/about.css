@@ -250,10 +250,16 @@ body {
 .skill-category {
     margin: 25px 0;
     padding: 20px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0, 238, 255, 0.15); /* Slightly lighter cyan */
     border-radius: 10px;
-    width: 100%;
+    width: 80%; /* Adjust width for better alignment */
+    max-width: 600px; /* Prevents excessive width */
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(0, 238, 255, 0.3); /* Adds a subtle border */
+    box-shadow: 0 4px 8px rgba(0, 238, 255, 0.1); /* Soft glow effect */
 }
+
 
 .skill-category h3 {
     color: #0ef;
