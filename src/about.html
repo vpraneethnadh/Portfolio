@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Me | Portfolio</title>
     <link rel="icon" href="../Images/shield-plus-regular-24.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
@@ -21,36 +21,60 @@
     </header>
 
     <section class="about-section">
-        <h1 class="about">Get to know me!</h1>
-        <p class="para">I am a dedicated developer with a passion for building and managing any applications. I am actively seeking opportunities to contribute to innovative projects and grow my skills in a professional environment.</p>
-        <p class="para">I am enthusiastic about sharing knowledge and engaging with the developer community. Feel free to connect with me on 
-        <a href="https://www.linkedin.com/in/vpraneethnadh/" target="_blank">LinkedIn</a> and 
-        <a href="https://github.com/vpraneethnadh" target="_blank">GitHub</a>, where I actively post updates on my work and insights on web development.</p>
-        <p>I am open to job opportunities where I can apply my skills, learn, and grow. If you have a position that matches my background, please don't hesitate to get in touch.</p>
+        <h1 class="about">Professional Profile</h1>
+        <p class="para">Full-stack developer with expertise in building scalable web applications and a strong foundation in software engineering principles. Currently enhancing enterprise solutions at XYZ Corporation, where I've successfully led the migration of legacy systems to modern microservices architecture.</p>
+        <p class="para">My technical blog on Medium has garnered over 50,000 views, sharing insights on performance optimization and clean code practices. Regular contributor to open-source projects, with 15+ merged PRs in the past year.</p>
+        <p class="para">Let's connect and explore how we can collaborate:</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vpraneethnadh/" target="_blank" class="social-link">
+                <i class='bx bxl-linkedin'></i> LinkedIn
+            </a>
+            <a href="https://github.com/vpraneethnadh" target="_blank" class="social-link">
+                <i class='bx bxl-github'></i> GitHub
+            </a>
+        </div>
     </section>
 
     <section class="skills-section">
-        <h2>My Skills</h2>
+        <h2>Technical Expertise</h2>
         <div class="skills-container">
-            <div class="skill-box" style = "--i: 1;">Java</div>
-            <div class="skill-box" style = "--i: 2;">Python</div>
-            <div class="skill-box" style = "--i: 3;">C</div>
-            <div class="skill-box" style = "--i: 4;">C++</div>
-            <div class="skill-box" style = "--i: 5;">HTML</div>
-            <div class="skill-box" style = "--i: 6;">CSS</div>
-            <div class="skill-box" style = "--i: 7;">JavaScript</div>
-            <div class="skill-box" style = "--i: 8;">DSA</div>
-            <div class="skill-box" style = "--i: 9;">NodeJS</div>
-            <div class="skill-box" style = "--i: 10;">WordPress</div>
-            <div class="skill-box" style = "--i: 11;">ReactJS</div>
-            <div class="skill-box" style = "--i: 12;">SQL</div>
-            <div class="skill-box" style = "--i: 13;">MongoDB</div>
-            <div class="skill-box" style = "--i: 14;">MySQL</div>
-            <div class="skill-box" style = "--i: 15;">Artificial Intelligence</div>
-            <div class="skill-box" style = "--i: 16;">Machine Learning</div>
-            <div class="skill-box" style = "--i: 17;">Natural Language Processing</div>
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-box" style="--i:1">Java</div>
+                <div class="skill-box" style="--i:2">Python</div>
+                <div class="skill-box" style="--i:3">JavaScript (ES6+)</div>
+                <div class="skill-box" style="--i:4">C/C++</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-box" style="--i:5">React.js</div>
+                <div class="skill-box" style="--i:6">HTML5</div>
+                <div class="skill-box" style="--i:7">CSS3/Sass</div>
+                <div class="skill-box" style="--i:8">Bootstrap</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-box" style="--i:9">Node.js</div>
+                <div class="skill-box" style="--i:10">Express.js</div>
+                <div class="skill-box" style="--i:11">REST APIs</div>
+                <div class="skill-box" style="--i:12">GraphQL</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Data & DevOps</h3>
+                <div class="skill-box" style="--i:13">MySQL</div>
+                <div class="skill-box" style="--i:14">MongoDB</div>
+                <div class="skill-box" style="--i:15">Docker</div>
+                <div class="skill-box" style="--i:16">AWS EC2</div>
+            </div>
         </div>
     </section>
+
+    <button type="button" class="btn btn-outline-primary" onclick="location.href='./contact.html'">
+        Schedule Consultation
+    </button>
     <!-- <button type="button" class="btn btn-outline-primary" onclick = "location.href='./contact.html'">Contact Me</button> -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
