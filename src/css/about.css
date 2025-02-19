@@ -177,26 +177,22 @@ body {
     margin-top: 0; 
 }
 
-.skills-section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #0ef;
-    border-bottom: 2px solid #0ef;
-    padding-bottom: 10px;
-    display: inline-block;
-    opacity: 0;
-    animation: slideTop 2s ease forwards;
-    animation-delay: 1.2s;
-}
-
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
+}
+
+.skill-category {
+    flex: 1 1 calc(50% - 20px); /* Each box takes 50% width with spacing */
+    padding: 20px;
+    background: rgba(0, 238, 255, 0.15);
+    border-radius: 10px;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid rgba(0, 238, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 238, 255, 0.1);
 }
 
 .skill-box {
