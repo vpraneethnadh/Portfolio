@@ -9,7 +9,8 @@
 </head>
 <body>
   <header class="header">
-    <a href="../index.html" class="logo">Portfolio<span class="accent-dot"></span></a>
+    <a href="../index.html" class="logo">Portfolio</a>
+
     <nav class="navbar">
       <a href="../index.html">Home</a>
       <a href="about.html">About</a>
@@ -18,11 +19,29 @@
       <a href="project.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
+
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" role="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
 
-  <main class="pubs-container">
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="publications.html" class="active">Publications</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <main class="pubs-container" role="main">
     <div class="page-header">
-      <h1 class="page-title">Publications</h1>
+      <h1 class="page-title2">Publications</h1>
       <p class="page-subtitle">Peer-reviewed papers and research work I’ve contributed to.</p>
     </div>
 
@@ -69,5 +88,44 @@
       </div>
     </div>
   </footer>
+
+  <!-- Small script to toggle mobile menu and prevent background scroll -->
+  <script>
+    (function(){
+      const ham = document.getElementById('hamburger');
+      const menu = document.getElementById('mobileMenu');
+
+      function openMenu(){
+        ham.classList.add('active');
+        menu.classList.add('active');
+        ham.setAttribute('aria-expanded','true');
+        menu.setAttribute('aria-hidden','false');
+        // prevent background scroll - use body overflow hidden
+        document.body.style.overflow = 'hidden';
+      }
+      function closeMenu(){
+        ham.classList.remove('active');
+        menu.classList.remove('active');
+        ham.setAttribute('aria-expanded','false');
+        menu.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+      }
+
+      ham.addEventListener('click', () => {
+        if(menu.classList.contains('active')) closeMenu();
+        else openMenu();
+      });
+
+      // close when link clicked
+      document.querySelectorAll('.mobile-nav a').forEach(a =>
+        a.addEventListener('click', () => closeMenu())
+      );
+
+      // close on Escape
+      document.addEventListener('keydown', (e) => {
+        if(e.key === 'Escape' && menu.classList.contains('active')) closeMenu();
+      });
+    })();
+  </script>
 </body>
 </html>
