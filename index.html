@@ -1,46 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="icon" href="./Images/shield-plus-regular-24.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Praneeth — Home</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class = "header">
-        <a href = "./index.html" class = "logo">Portfolio</a>
-        <nav class = "navbar">
-            <a href = "./index.html" style = "--i: 1;" class = "active">Home</a>
-            <a href = "./src/about.html" style = "--i: 2;">About</a>
-            <a href = "./src/project.html" style = "--i: 3;">Projects</a>
-            <a href = "./src/contact.html" style = "--i: 4;">Contact</a>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="index.html" class="logo">Portfolio<span style="color:var(--accent)"></span></a>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="src/about.html">About</a>
+      <a href="src/certifications.html">Certifications</a>
+      <a href="src/publications.html">Publications</a>
+      <a href="src/project.html">Projects</a>
+      <a href="src/contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class = "home">
-        <div class = "home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Vudattu Praneethnadh</h1>
-            <h3>I'm a <span class = "multiple-text"></span></h3>
-            <p>Welcome to my portfolio! I'm a developer dedicated to turning ideas into reality with clean code and intuitive design. I believe in making a difference by creating user-friendly applications that are both functional and visually appealing. Explore my projects to see how I blend creativity with technical expertise to deliver impactful, high-quality solutions tailored to meet diverse needs.</p>
-            <div class="social-media">
-                <a href="https://github.com/vpraneethnadh" target="_blank" style="--i:8;"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/vpraneethnadh/" target="_blank" style="--i:9;"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://leetcode.com/u/4C7bRW6xHr/" target="_blank" style="--i:10;"><i class='bx bx-code-alt'></i></a>
-            </div>
-            <button type="button" class="btn btn-outline-info">Download Resume</button>
+  <main class="home-container">
+    <section class="home-hero">
+      <div class="hero-card">
+        <div class="hero-eyebrow">Full-stack developer • Designer • Builder</div>
+        <h1 class="hero-title">
+          Vudattu Praneethnadh
+        </h1>
+        <p class="hero-text">
+          I’m Vudattu Praneethnadh, someone who enjoys working quietly and with intention. I love building clean interfaces and dependable backend systems, and I focus best when I’m deep into meaningful work. I combine research thinking, practical engineering, and clear communication to create software that feels simple, purposeful, and reliable.
+        </p>
+
+
+        <div class="hero-highlights">
+          <div class="hero-highlight">
+            <div class="highlight-badge">Location</div>
+            <strong>Kakinada → Kuppam, India</strong>
+            <span>Remote-friendly</span>
+          </div>
+          <div class="hero-highlight">
+            <div class="highlight-badge">Currently</div>
+            <strong>Final year • TCS incoming</strong>
+            <span>Open to collaborations</span>
+          </div>
+          <div class="hero-highlight">
+            <div class="highlight-badge">Focus</div>
+            <strong>React • Node • Python</strong>
+            <span>AI-assisted building</span>
+          </div>
         </div>
 
-        <div class = "photos">
-            <img src = "./Images/Formal Photo.JPG" alt = "">
+        <div class="hero-actions">
+          <a href="src/project.html" class="action-btn primary">
+            <i class='bx bx-rocket'></i> Explore Projects
+          </a>
+          <a href="src/about.html" class="action-btn">
+            <i class='bx bx-user'></i> My Story
+          </a>
+          <a href="src/contact.html" class="action-btn subtle">
+            <i class='bx bx-message-rounded-dots'></i> Say Hello
+          </a>
         </div>
+      </div>
+
+      <aside class="hero-profile">
+        <!-- Updated profile frame: larger image + name overlay -->
+        <div class="profile-frame"> <img src="Images/Formal Photo.JPG" alt="Praneeth portrait" onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&sat=-100'"> </div>
+        </div>
+
+        <div class="profile-note">
+          <i class='bx bx-brain'></i>
+          <div>
+            <strong>Introvert advantage</strong>
+            <span>Quiet focus, deep listening, deliberate delivery</span>
+          </div>
+        </div>
+        <div class="profile-note">
+          <i class='bx bx-moon'></i>
+          <div>
+            <strong>Night Owl sprints</strong>
+            <span>Love calm environments & long-form problem solving</span>
+          </div>
+        </div>
+        <div class="profile-tags">
+          <span><i class='bx bx-code-curly'></i> Full-stack</span>
+          <span><i class='bx bx-line-chart'></i> Data-aware</span>
+          <span><i class='bx bx-compass'></i> Product-minded</span>
+        </div>
+      </aside>
     </section>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src = "app.js"></script>
+
+    <section class="home-panels">
+      <div class="panel-card">
+        <div class="card-icon accent">
+          <i class='bx bx-palette'></i>
+        </div>
+        <h3>Craft-first mindset</h3>
+        <p>I obsess over clarity, accessibility, and the tiny details that make interfaces feel intuitive — quietly iterating until it feels right.</p>
+      </div>
+      <div class="panel-card">
+        <div class="card-icon">
+          <i class='bx bx-user-voice'></i>
+        </div>
+        <h3>Introvert-friendly collaboration</h3>
+        <p>Clear documentation, thoughtful async updates, and focused conversations make me a steady teammate even in fast-moving teams.</p>
+      </div>
+      <div class="panel-card">
+        <div class="card-icon">
+          <i class='bx bx-layer'></i>
+        </div>
+        <h3>Systems thinking</h3>
+        <p>From React frontends to Node services and automation scripts — I map the whole system before shipping reliable parts.</p>
+      </div>
+    </section>
+
+    <section class="home-snapshot">
+      <div class="snapshot-header">
+        <div>
+          <div class="section-eyebrow">Recent focus</div>
+          <h2 class="section-title">What I’ve been building</h2>
+        </div>
+        <p class="section-subtitle">A selection of current projects, experiments, and rituals that keep me sharp without overwhelming the introvert in me.</p>
+      </div>
+
+      <div class="snapshot-grid">
+        <article class="snapshot-card">
+          <div class="snapshot-meta">
+            <span class="meta-pill">In progress</span>
+            <span class="meta-date">2025</span>
+          </div>
+          <h3>Research-driven product experiments</h3>
+          <p>Pairing evidence-based insights with UI polish to explore how automation can deliver calmer, more human experiences.</p>
+          <ul>
+            <li> Prototyping AI-assisted onboarding flows</li>
+            <li> Running usability tests with a remote-first approach</li>
+          </ul>
+        </article>
+
+        <article class="snapshot-card">
+          <div class="snapshot-meta">
+            <span class="meta-pill neutral">Career</span>
+            <span class="meta-date">2024 →</span>
+          </div>
+          <h3>Joining TCS • Systems Engineer</h3>
+          <p>Preparing for the next chapter — balancing enterprise delivery with the care of a craftsman and the calm of an introvert.</p>
+          <ul>
+            <li>Scaling collaboration habits for large teams</li>
+            <li>Translating prototypes into production features</li>
+          </ul>
+        </article>
+
+        <article class="snapshot-card">
+          <div class="snapshot-meta">
+            <span class="meta-pill">Personal</span>
+            <span class="meta-date">Ongoing</span>
+          </div>
+          <h3>Quiet routines, steady growth</h3>
+          <p>Reading, sketching interface ideas, and refining my developer toolkit — all in the comfort of low-light playlists and focused evenings.</p>
+          <ul>
+            <li>Weekly deep work sessions on open-source tools</li>
+            <li>Documenting discoveries to share with the community</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-cta">
+      <div>
+        <h2>Let’s collaborate in a way that feels calm and meaningful.</h2>
+        <p>Whether you prefer async updates or periodic deep dives, I adapt. Drop a note — we’ll build something thoughtful together.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="src/contact.html" class="action-btn primary">
+          <i class='bx bx-message-dots'></i> Start a Conversation
+        </a>
+        <a href="src/project.html" class="action-btn">
+          <i class='bx bx-show'></i> See Work
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© <strong>Praneeth</strong> • Crafted with intention</p>
+      <p>Introvert-powered creativity • Open to opportunities</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
