@@ -4,18 +4,23 @@
   max-width: 1200px;
   margin: 120px auto 60px auto;
   padding: 0 20px;
+  padding-top: 76px;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 20px;
 }
 
 .page-header { margin-bottom: 20px; }
 
-.page-title {
-  font-size: 34px;
-  font-weight: 800;
-  margin: 0;
-  color: #ffffff; /* plain color to avoid block gradient */
+.page-title2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
 }
 
 .page-subtitle {
