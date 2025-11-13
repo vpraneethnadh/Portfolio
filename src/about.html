@@ -1,93 +1,445 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Portfolio</title>
-    <link rel="icon" href="../Images/shield-plus-regular-24.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/about.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Praneeth</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="../index.html" style="--i: 1;" class="active">Home</a>
-            <a href="./about.html" style="--i: 2;">About</a>
-            <a href="./project.html" style="--i: 3;">Projects</a>
-            <a href="./contact.html" style="--i: 4;">Contact</a>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="../index.html" class="logo">Portfolio<span style="color:var(--accent)"></span></a>
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="publications.html">Publications</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section class="about-section">
-        <h1 class="about">Professional Profile</h1>
-        <p class="para">I am currently in my final year of B.Tech, passionate about web development and artificial intelligence. My interest in full-stack development stems from my love for building interactive and scalable websites, while my curiosity about the future of technology drives me to explore data science.</p>
-        <p class="para">I enjoy creating projects from scratch, dedicating my time to hands-on development and continuous learning. You can explore some of my projects in the <a href="./project.html">Project Files</a>.</p>
-        <p class="para">Beyond coding, I have a keen interest in the stock market and enjoy analyzing trends and investment strategies. I am always eager to collaborate and work on innovative ideas that push technological boundaries.</p>
-        <p class="para">I believe in the power of open-source contributions and enjoy collaborating with developers to create meaningful software solutions. Whether it’s optimizing algorithms, improving UI/UX, or automating tasks, I strive to make technology more efficient and accessible.</p>
-        
-        <p class="para">Let's connect and explore how we can collaborate:</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/vpraneethnadh/" target="_blank" class="social-link">
-                <i class='bx bxl-linkedin'></i> LinkedIn
-            </a>
-            <a href="https://github.com/vpraneethnadh" target="_blank" class="social-link">
-                <i class='bx bxl-github'></i> GitHub
-            </a>
+  <main class="about-container">
+    <section class="about-hero">
+      <div class="intro-card">
+        <div class="intro-eyebrow">Who I Am</div>
+        <h1 class="intro-title">Designing thoughtful experiences and building products end-to-end.</h1>
+        <p class="intro-text">
+            I’m Vudattu Praneethnadh — a developer who enjoys turning quiet curiosity into meaningful creation. 
+            My journey began with experimenting in Java and Python, and over time, evolved into building 
+            full-stack applications that blend logic with thoughtful design. I value precision, simplicity, 
+            and deep work — the calm focus that turns ideas into reliable, human-centered products. 
+            Beyond code, I love learning new technologies, exploring how design shapes user experience, 
+            and steadily improving my craft one project at a time.
+        </p>
+
+
+        <div class="intro-highlights">
+          <div class="highlight">
+            <div class="highlight-value">4+</div>
+            <div class="highlight-label">Years crafting software</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-value">15+</div>
+            <div class="highlight-label">Projects & experiments</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-value">∞</div>
+            <div class="highlight-label">Curiosity & learning</div>
+          </div>
         </div>
+
+        <div class="intro-actions">
+          <a href="../PDF/Resume.pdf" target="_blank" class="action-btn primary">
+            <i class='bx bx-download'></i> Download Resume
+          </a>
+          <a href="project.html" class="action-btn">
+            <i class='bx bx-rocket'></i> View Projects
+          </a>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <!-- <div class="profile-photo">
+          <img src="../Images/Formal Photo.JPG" alt="Praneeth portrait" onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&sat=-100'">
+        </div> -->
+        <div class="profile-meta">
+          <h2>Vudattu Praneethnadh</h2>
+          <p>Full-stack developer • Problem solver</p>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-pill">
+            <i class='bx bx-map'></i>
+            <span>Kuppam, India</span>
+          </div>
+          <div class="profile-pill">
+            <i class='bx bx-book-open'></i>
+            <span>B.Tech — Computer Science and Engineering</span>
+          </div>
+          <div class="tech-skills">
+            Technical Skills
+          </div>
+          <div class="skills-container">
+            <div class="skill">
+                <div class="skill-header">
+                    <span>Java</span>
+                    <!-- <span>7/10</span> -->
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-fill" style="--level:82%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>Python</span>
+                    <!-- <span>7/10</span> -->
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-fill" style="--level:75%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>React</span>
+                    <!-- <span>6/10</span> -->
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-fill" style="--level:65%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>SQL</span>
+                    <!-- <span>6/10</span> -->
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-fill" style="--level:55%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>NodeJS</span>
+                    <!-- <span>5/10</span> -->
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-fill" style="--level:52%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>Firebase</span>
+                    <!-- <span>5/10</span> -->
+                    </div>
+                    <div class="skill-bar">
+                    <div class="skill-fill" style="--level:70%"></div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="profile-links">
+          <a href="https://www.linkedin.com/in/vpraneethnadh/" target="_blank" class="profile-link">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="https://github.com/vpraneethnadh" target="_blank" class="profile-link">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a href="https://www.instagram.com/vpraneeth_1016?igsh=eDBoM29lZ3gzMmFt" target="_blank" class="profile-link">
+            <i class='bx bxl-instagram'></i>
+          </a>
+        </div>
+      </aside>
     </section>
 
-    <section class="skills-section">
-    <h2>Technical Expertise</h2>
-    <div class="skills-container">
-        
-        <div class="skill-category">
-            <h3>Languages</h3>
-            <div class="skill-box">Java</div>
-            <div class="skill-box">Python</div>
-            <div class="skill-box">JavaScript (ES6+)</div>
-            <div class="skill-box">C/C++</div>
+    <section class="education-section">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">My Journey</div>
+          <h2 class="section-title">Education</h2>
+        </div>
+      </div>
+
+      <div class="education-timeline">
+
+        <div class="edu-row">
+          <div class="edu-left">
+            <span class="edu-year">2021 – 2025</span>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card">
+            <h3>B.Tech in Computer Science — VIT Amaravati</h3>
+            <p class="edu-sub">Andhra Pradesh, India • <strong>CGPA 8.44</strong></p>
+            <p class="edu-desc">Undergraduate program focused on full-stack development, applied AI, and research — completed a peer-reviewed study on energy optimisation for WBANs.</p>
+          </div>
         </div>
 
-        <div class="skill-category">
-            <h3>Frontend</h3>
-            <div class="skill-box">React.js</div>
-            <div class="skill-box">HTML5</div>
-            <div class="skill-box">CSS3</div>
-            <div class="skill-box">Bootstrap</div>
+        <div class="edu-row">
+          <div class="edu-left">
+            <span class="edu-year">2019 – 2021</span>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card">
+            <h3>Intermediate — Sri Chaitanya Academy Junior College, Tirupati</h3>
+            <p class="edu-sub">Andhra Pradesh, India • <strong>84.9%</strong></p>
+            <p class="edu-desc">Focused STEM curriculum preparing for engineering entrance exams; strengthened analytical and problem-solving skills.</p>
+          </div>
         </div>
 
-        <div class="skill-category">
-            <h3>Backend</h3>
-            <div class="skill-box">Node.js</div>
-            <div class="skill-box">Express.js</div>
-            <div class="skill-box">REST APIs</div>
+        <div class="edu-row">
+          <div class="edu-left">
+            <span class="edu-year">2018 – 2019</span>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card">
+            <h3>Class 10 — Narayana EM School, Kuppam</h3>
+            <p class="edu-sub">Andhra Pradesh, India • <strong>CGPA 9.3</strong></p>
+            <p class="edu-desc">Completed secondary schooling with strong academic performance and early interest in computing and science fairs.</p>
+          </div>
         </div>
 
-        <div class="skill-category">
-            <h3>Data & DevOps</h3>
-            <div class="skill-box">MySQL</div>
-            <div class="skill-box">MongoDB</div>
+      </div>
+    </section>
+
+
+
+    <section class="timeline-section">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">My Journey</div>
+          <h2 class="section-title">Milestones & Moments</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">June 2025</div>
+          <div class="timeline-card">
+            <h3>Published My First Research Paper</h3>
+            <p>Completed extensive experimentation and published a peer-reviewed IEEE paper on optimizing energy consumption in Wireless Body Area Networks (WBANs).</p>
+            <ul>
+              <li>Developed an energy-aware optimization model using Euclidean distance and Genetic Algorithms</li>
+              <li>Presented findings showing significant reductions in sensor energy usage, improving WBAN efficiency and device lifespan</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="skill-category">
-            <h3>Data Science</h3>
-            <div class="skill-box">Machine Learning</div>
-            <div class="skill-box">R</div>
-            <div class="skill-box">Natural Language Processing</div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-card">
+            <h3>Completed B.Tech</h3>
+            <p>Closed out four years at Vellore Institute of Technology, Amaravati with a capstone on full-stack product engineering and applied AI.</p>
+            <ul>
+              <li>Delivered a production-ready final year project with measurable outcomes</li>
+              <li>Collaborated with mentors to document lessons for incoming cohorts</li>
+            </ul>
+          </div>
         </div>
 
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Dec 2024</div>
+          <div class="timeline-card">
+            <h3>Joined TCS • First Professional Role</h3>
+            <p>Accepted my first full-time offer with Tata Consultancy Services, transitioning classroom experience into industry-grade product development.</p>
+            <ul>
+              <li>Onboarded to a large-scale team, adapting to agile delivery rhythms</li>
+              <li>Contributed to client-facing modules while refining collaboration skills</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">May 2024</div>
+          <div class="timeline-card">
+            <h3>Began First Research Publication</h3>
+            <p>Kicked off a formal study exploring optimisation techniques and ML-driven productivity. Balanced academics with deep literature reviews and prototyping.</p>
+            <ul>
+              <li>Outlined methodology and study scope with faculty guidance</li>
+              <li>Built a lightweight experimentation framework to gather results</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2024</div>
+          <div class="timeline-card">
+            <h3>Earned AWS Certification</h3>
+            <p>Expanded cloud expertise with Amazon Web Services, reinforcing end-to-end deployment skills and scalable architecture thinking.</p>
+            <ul>
+              <li>Practised architecting resilient services using AWS best practices</li>
+              <li>Applied learning to automate project infrastructure and CI/CD</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <div class="timeline-card">
+            <h3>First Hackathon Experience</h3>
+            <p>Jumped into collaborative building, learning how to ideate, prototype, and pitch within 24 hours alongside a diverse team.</p>
+            <ul>
+              <li>Delivered a working concept by splitting responsibilities effectively</li>
+              <li>Collected feedback from mentors to improve future iterations</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Oct 2023</div>
+          <div class="timeline-card">
+            <h3>Completed Microsoft Azure Certification</h3>
+            <p>Deepened understanding of Microsoft Azure services, strengthening cloud-native design skills and multi-cloud fluency.</p>
+            <ul>
+              <li>Explored Azure automation, security, and monitoring capabilities</li>
+              <li>Mapped Azure learnings back to long-term product goals</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022</div>
+          <div class="timeline-card">
+            <h3>Built First Major Project</h3>
+            <p>Transformed classroom concepts into a tangible product — the foundation for later ventures into compilers, automation, and ML-assisted tools.</p>
+            <ul>
+              <li>Handled everything from user flows to deployment personally</li>
+              <li>Discovered a love for full-stack ownership and iterative shipping</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021</div>
+          <div class="timeline-card">
+            <h3>Joined B.Tech at VIT Amaravati</h3>
+            <p>Stepped into engineering school with a focus on computer science, ready to explore emerging technologies and multidisciplinary work.</p>
+            <ul>
+              <li>Selected electives that bridged software design and AI</li>
+              <li>Joined student groups to collaborate and share knowledge</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019</div>
+          <div class="timeline-card">
+            <h3>Graduated School • Began Intermediate Studies</h3>
+            <p>Closed the school chapter and enrolled in intermediate studies, laying groundwork in STEM disciplines and problem solving.</p>
+            <ul>
+              <li>Balanced academics with early coding experiments</li>
+              <li>Built the discipline required for engineering coursework</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2007</div>
+          <div class="timeline-card">
+            <h3>Started School</h3>
+            <p>Began formal education, developing curiosity and a love for learning that continues to shape every new challenge.</p>
+            <ul>
+              <li>Participated in early science fairs and creative clubs</li>
+              <li>Learned the value of perseverance and teamwork</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2004</div>
+          <div class="timeline-card">
+            <h3>Born in Kakinada, India</h3>
+            <p>The beginning of the journey — growing up in a vibrant community that nurtured curiosity, resilience, and an appreciation for impact.</p>
+            <ul>
+              <li>Family support and early mentors encouraged exploration</li>
+              <li>Roots that continue to inform values and future aspirations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-highlights">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Beyond the Resume</div>
+          <h2 class="section-title">What Drives Me</h2>
+        </div>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="card-icon">
+            <i class='bx bx-bulb'></i>
+          </div>
+          <h3>Crafting With Intent</h3>
+          <p>I believe great products balance aesthetics, empathy, and engineering. My focus is on creating tools that feel intuitive and purposeful.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="card-icon">
+            <i class='bx bx-network-chart'></i>
+          </div>
+          <h3>Curiosity Fueled</h3>
+          <p>Whether it's machine learning, emerging frameworks, or design systems — I'm always tinkering, experimenting, and learning.</p>
+        </div>
+
+        <div class="highlight-card">
+          <div class="card-icon">
+            <i class='bx bx-group'></i>
+          </div>
+          <h3>People & Collaboration</h3>
+          <p>The best work happens with great teams. I value clear communication, feedback loops, and building together with empathy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <h2>Let’s build something memorable.</h2>
+        <p>Open to opportunities, collaborations, and learning with ambitious teams. Drop me a note and I'll respond quickly.</p>
+      </div>
+      <a href="contact.html" class="action-btn primary">
+        <i class='bx bx-mail-send'></i> Contact Me
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© <strong>Praneeth</strong> • Kuppam, India</p>
+      <p>Always learning • Always shipping</p>
     </div>
-</section>
+  </footer>
 
-<!--     <button type="button" class="btn btn-outline-primary" onclick="location.href='./contact.html'">
-        Schedule Consultation
-    </button> -->
-    <!-- <button type="button" class="btn btn-outline-primary" onclick = "location.href='./contact.html'">Contact Me</button> -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="app.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.skill-fill').forEach(bar => {
+      const width = bar.style.getPropertyValue('--level');
+      bar.style.width = '0';
+      setTimeout(() => {
+        bar.style.width = width;
+      }, 200);
+    });
+  });
+</script>
+
 </html>
