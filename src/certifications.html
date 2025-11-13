@@ -9,8 +9,25 @@
 </head>
 <body>
   <header class="header">
-    <a href="../index.html" class="logo">Portfolio<span class="accent-dot"></span></a>
+    <a href="../index.html" class="logo">Portfolio<span style="color:var(--accent)"></span></a>
     <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="publications.html">Publications</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
       <a href="../index.html">Home</a>
       <a href="about.html">About</a>
       <a href="certifications.html" class="active">Certifications</a>
@@ -18,8 +35,7 @@
       <a href="project.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
-
+  </div>
   <main class="certs-container">
     <div class="page-header">
       <h1 class="page-title">Certifications</h1>
@@ -71,5 +87,6 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
