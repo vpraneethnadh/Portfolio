@@ -1,0 +1,79 @@
+@import url('../../style.css');
+
+.pubs-container {
+  max-width: 1200px;
+  margin: 120px auto 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.page-header { margin-bottom: 20px; }
+
+.page-title {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff; /* plain color to avoid block gradient */
+}
+
+.page-subtitle {
+  color: var(--muted, #9aa4ad);
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
+/* Grid + cards */
+.pubs-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+
+.pub-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.005));
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 36px rgba(0,0,0,0.28);
+}
+
+.pub-meta { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+
+.pub-badge {
+  padding:8px 12px;
+  border-radius:10px;
+  background: rgba(147,51,234,0.08);
+  color:#caa1ff;
+  border:1px solid rgba(147,51,234,0.12);
+  font-weight:700;
+  font-size:12px;
+  text-transform:uppercase;
+}
+
+.pub-year { color: var(--muted, #9aa4ad); font-weight:700; }
+
+.pub-title { margin: 6px 0 10px; font-size:20px; color:#fff; line-height:1.25; }
+
+.pub-desc { color: var(--muted, #9aa4ad); margin:0 0 14px; line-height:1.6; }
+
+.pub-details { list-style: none; padding:0; margin:0 0 16px; display:flex; flex-direction:column; gap:6px; }
+.pub-details li { color: rgba(219,230,234,0.9); font-size:14px; }
+
+/* View Paper button */
+.view-paper-btn {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:10px 16px; border-radius:10px; font-weight:700;
+  text-decoration:none; color:#012114;
+  background: linear-gradient(135deg, rgba(110,231,183,0.95), rgba(110,231,183,0.8));
+  border: 1px solid rgba(110,231,183,0.28);
+  transition: transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 8px 28px rgba(12,40,30,0.28);
+}
+.view-paper-btn i { font-size:18px; color:#012114; }
+
+.view-paper-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 48px rgba(12,40,30,0.42); }
+
+/* Responsive */
+@media (max-width:768px) {
+  .pubs-container { margin: 40px auto; }
+  .page-title { font-size:26px; }
+  .view-paper-btn { padding:9px 14px; }
+}
