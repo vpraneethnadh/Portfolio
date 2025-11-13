@@ -1,232 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../Images/shield-plus-regular-24.png" type="image/x-icon" />
-  <title>Projects | Portfolio</title>
-
-  <!-- Boxicons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    crossorigin="anonymous"
-  />
-  <!-- Your Custom Styles -->
-  <link rel="stylesheet" href="./css/project.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Praneeth</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/project.css">
 </head>
 <body>
   <header class="header">
-    <a href="../index.html" class="logo">Portfolio</a>
+    <a href="../index.html" class="logo">Portfolio<span style="color:var(--accent)"></span></a>
     <nav class="navbar">
-      <a href="../index.html" class="active">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./project.html">Projects</a>
-      <a href="./contact.html">Contact</a>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="publications.html">Publications</a>
+      <a href="project.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <div class="projects-container">
-    <!-- <h1>Projects Worked On</h1> -->
-    <div id="project-carousel">
-      <button id="prev-project" class="carousel-arrow carousel-arrow-left" aria-label="Previous Project">
-        <i class="bx bx-chevron-left"></i>
-      </button>
-      <div class="carousel-cards">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <h2 class = "project-title">Netflix-clone</h2>
-          <p>This project replicates the core features of Netflix, allowing users to seamlessly browse, search, and watch movie and TV show trailers with an engaging and responsive interface. It integrates Firebase for secure authentication and TMDB API for dynamic content, delivering an immersive streaming-like experience. The system is designed to demonstrate modern web development practices, providing a real-world example of how scalable streaming platforms are built.</p>
-          <div class="project-content">
-            <img src="../Images/Netflix Image.jpeg" alt="Netflix" class="project-img" />
-            <div class="project-details">
-              <h4>Technologies Used:</h4>
-              <div class="technologies">
-                <span class="technology">API</span>
-                <span class="technology">Firebase</span>
-              </div>
-              <h4>Language Used:</h4>
-              <div class="language-box">React</div>
-              <div class="project-links">
-                <a href="https://github.com/vpraneethnadh/Netflix-clone" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-                <a href="https://netflix-delta-lime-46.vercel.app/Login" target="_blank" class="btn btn-outline-primary">View Website</a>
-              </div>
-            </div>
-          </div>
-        </div>
+  <main class="projects-container">
+    <div class="projects-header">
+      <div>
+        <h1 class="page-title">My Projects</h1>
+        <p class="page-subtitle">A collection of my work — from web applications to machine learning solutions</p>
       </div>
-        <!-- Project 2 -->
-        <div class="project-card">
-          <h2 class="project-title">Simplicode (Multilanguage Online Compiler)</h2>
-          <p><strong>Simplicode</strong> is a modern web-based platform designed for developers to write, run, and share code snippets with ease. Supporting 9 programming languages, it features syntax highlighting, real-time execution, and collaborative tools. It leverages <strong>Gemini Flash 2.0 AI</strong>, the <strong>Judge0 CE API</strong>, and a high-performance <strong>SQL WebAssembly</strong> engine, plus <strong>Firebase</strong> for auth and data.</p>
-          <div class="project-content">
-            <img src="../Images/Online compiler.png" alt="Online Compiler" class="project-img" />
-            <div class="project-details">
-              <h4>Technologies Used:</h4>
-              <div class="technologies">
-                <span class="technology">React</span>
-                <span class="technology">API</span>
-                <span class="technology">WebAssembly</span>
-                <span class="technology">Firebase</span>
-              </div>
-              <h4>Language Used:</h4>
-              <div class="language-box">React</div>
-              <div class="project-links">
-                <a href="https://github.com/vpraneethnadh/Simplicode-Online-Compiler" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-                <a href="https://simplicode.vercel.app/" target="_blank" class="btn btn-outline-primary">View Website</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
 
-        <!-- Project 3 -->
-        <div class="project-card">
-          <h2 class = "project-title">Weather Monitoring Website</h2>
-          <p>This website provides accurate weather forecasting information for any location on the planet, with up to 99.9% accuracy. Developed using Google and OpenWeather APIs, it delivers daily weather data, calculates key metrics like average, minimum, and maximum temperatures, and highlights dominant weather conditions. The system also includes alerts for threshold breaches and visualizations for historical trends and daily summaries.</p>
-          <div class="project-content">
-            <img src="../Images/Weather App.jpeg" alt="Weather App" class="project-img" />
-            <div class="project-details">
-              <h4>Technologies Used:</h4>
-              <div class="technologies">
-                <span class="technology">APIs</span>
-                <span class="technology">Flask</span>
-              </div>
-              <h4>Language Used:</h4>
-              <div class="language-box">Python</div>
-              <div class="project-links">
-                <a href="https://github.com/vpraneethnadh/Weather-Monitoring" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-          <h2 class = "project-title">WBAN Optimization</h2>
-          <p>Wireless Body Area Networks (WBANs) consist of sensor nodes placed on or around the human body to monitor vital signs and other physiological data. This repository implements and compares energy consumption in WBANs using both non-genetic and genetic algorithms. In addition, it includes a simple interactive website showcasing the simulation results. We decreased the energy usage using Genetic Algorithm, We also developed a website that tells us the energy usage with genetic algorithm and without the genetic algorithm.</p>
-          <div class="project-content">
-            <img src="../Images/WBAN Optimization.jpeg" alt="WBAN Optimization" class="project-img" />
-            <div class="project-details">
-              <h4>Technologies Used:</h4>
-              <div class="technologies">
-                <span class="technology">Flask</span>
-              </div>
-              <h4>Language Used:</h4>
-              <div class="language-box">Python</div>
-              <div class="project-links">
-                <a href="https://github.com/vpraneethnadh/WBAN-Optimization" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="project-card">
-          <h2 class = "project-title">Vehicle Theft Detection</h2>
-          <p>This project involves the development of a vehicle theft detection system that provides an additional layer of security. A camera installed inside the car captures an image whenever someone attempts to start the vehicle. The system then compares the captured image with a pre-stored image of the owner. If the match exceeds a certain threshold, the car is allowed to start. If not, an alert is immediately sent to the owner via email, including the vehicle's live location and the captured image for verification.</p>
-          <div class="project-content">
-            <img src="../Images/Vehicle Theft Detection Image.jpeg" alt="Vehicle Theft Detection" class="project-img" />
-            <div class="project-details">
-              <h4>Technologies Used:</h4>
-              <div class="technologies">
-                <span class="technology">geopy</span>
-                <span class="technology">face_recognition</span>
-                <span class="technology">smtplib</span>
-              </div>
-              <h4>Language Used:</h4>
-              <div class="language-box">Python</div>
-              <div class="project-links">
-                <a href="https://github.com/vpraneethnadh/Vehicle-Theft-Detection" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="project-card">
-          <h2 class = "project-title">Email Text to Voice Conversion</h2>
-          <p>This project focuses on enabling users to listen to their received emails with a single click, providing a convenient way to access email content. When a new email arrives, users can listen to all unread messages, including the sender's details. The system is particularly designed to assist visually impaired individuals, ensuring that they can easily stay informed about their emails without needing to rely on visual cues.</p>
-          <div class="project-content">
-            <img src="../Images/Email text to voice conversion image.jpeg" alt="Email to Voice" class="project-img" />
-            <div class="project-details">
-              <h4>Technologies Used:</h4>
-              <div class="technologies">
-                <span class="technology">gTTs</span>
-                <span class="technology">os</span>
-                <span class="technology">smtplib</span>
-              </div>
-              <h4>Language Used:</h4>
-              <div class="language-box">Python</div>
-              <div class="project-links">
-                <a href="https://github.com/vpraneethnadh/Email-to-Voice" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="projects-controls">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">
+          <i class='bx bx-grid-alt'></i> All
+        </button>
+        <button class="filter-btn" data-filter="web">
+          <i class='bx bx-code-alt'></i> Web
+        </button>
+        <button class="filter-btn" data-filter="tools">
+          <i class='bx bx-wrench'></i> Tools
+        </button>
+        <button class="filter-btn" data-filter="ml">
+          <i class='bx bx-brain'></i> ML / AI
+        </button>
+        <button class="filter-btn" data-filter="research">
+          <i class='bx bx-book'></i> Research
+        </button>
       </div>
-
-      <button id="next-project" class="carousel-arrow carousel-arrow-right" aria-label="next Project">
-        <i class="bx bx-chevron-right"></i>
-      </button>
       
-      <!-- <div class="carousel-controls">
-        <button id="prev-project" class="btn btn-outline-info">
-          <i class="bx bx-chevron-left"></i> Previous
-        </button>
-        <button id="next-project" class="btn btn-outline-info">
-          Next <i class="bx bx-chevron-right"></i>
-        </button>
-      </div> -->
+      <div class="search-wrapper">
+        <i class='bx bx-search search-icon'></i>
+        <input type="text" id="projectSearch" class="search-input" placeholder="Search projects..." />
+      </div>
+    </div>
+
+    <div id="projectsGrid" class="projects-grid">
+      <!-- Netflix-clone -->
+      <article class="project-card" 
+        data-tags="web,tools" 
+        data-title="netflix clone"
+        data-details='{"title":"Netflix Clone","category":"Web Application","description":"A fully responsive streaming platform clone that replicates the core Netflix experience. Built with modern web technologies, this project demonstrates advanced React patterns, API integration, and user authentication.","features":["User authentication with Firebase","Browse movies and TV shows via TMDB API","Search functionality","Trailer playback simulation","Responsive design for all devices","User favorites and watchlist"],"technologies":["React.js","Firebase Authentication","TMDB API","CSS3","JavaScript ES6+"],"github":"https://github.com/vpraneethnadh/Netflix-clone","demo":"https://netflix-delta-lime-46.vercel.app/Login","image":"../Images/Netflix Image.jpeg"}'>
+        <div class="project-image-wrapper">
+          <img src="../Images/Netflix Image.jpeg" alt="Netflix Clone" class="project-image" />
+          <div class="project-overlay">
+            <button class="overlay-btn info-btn" data-project="0">
+              <i class='bx bx-info-circle'></i> More Info
+            </button>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">Netflix Clone</h3>
+            <span class="project-badge web-badge">Web App</span>
+          </div>
+          <p class="project-description">A responsive streaming UI that uses TMDB API for content and Firebase for authentication. Features include browsing, search, and trailer playback simulation with focus on UX.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">TMDB API</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/vpraneethnadh/Netflix-clone" target="_blank" class="action-btn">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="https://netflix-delta-lime-46.vercel.app/Login" target="_blank" class="action-btn primary">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Simplicode -->
+      <article class="project-card" 
+        data-tags="web,tools" 
+        data-title="simplicode"
+        data-details='{"title":"Simplicode","category":"Online Compiler Platform","description":"A modern, multi-language online compiler that allows developers to write, compile, and execute code in multiple programming languages directly from the browser. Features real-time execution, code sharing, and a powerful WebAssembly-based SQL engine.","features":["Support for multiple programming languages","Real-time code execution via Judge0 CE","Code sharing and collaboration","WebAssembly SQL engine for performance","Firebase integration for data persistence","Syntax highlighting and code editor","User authentication and saved projects"],"technologies":["React.js","WebAssembly","Judge0 CE API","Firebase","JavaScript","CSS3"],"github":"https://github.com/vpraneethnadh/Simplicode-Online-Compiler","demo":"https://simplicode.vercel.app/","image":"../Images/Online compiler.png"}'>
+        <div class="project-image-wrapper">
+          <img src="../Images/Online compiler.png" alt="Simplicode Compiler" class="project-image" />
+          <div class="project-overlay">
+            <button class="overlay-btn info-btn" data-project="1">
+              <i class='bx bx-info-circle'></i> More Info
+            </button>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">Simplicode</h3>
+            <span class="project-badge tools-badge">Online Compiler</span>
+          </div>
+          <p class="project-description">A modern multi-language online compiler platform. Supports multiple languages, uses Judge0 CE for execution, integrates Firebase and WebAssembly SQL engine for performance.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">WebAssembly</span>
+            <span class="tech-tag">Judge0</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/vpraneethnadh/Simplicode-Online-Compiler" target="_blank" class="action-btn">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            <a href="https://simplicode.vercel.app/" target="_blank" class="action-btn primary">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Weather Monitoring -->
+      <article class="project-card" 
+        data-tags="web,ml" 
+        data-title="weather monitoring"
+        data-details='{"title":"Weather Monitoring Dashboard","category":"Web Dashboard","description":"A comprehensive weather monitoring system that provides real-time weather data, forecasts, and alerts. Integrates multiple weather APIs to deliver accurate information with beautiful visualizations and trend analysis.","features":["Real-time weather data","Daily and weekly forecasts","Weather alerts and thresholds","Interactive data visualizations","Location-based weather","Historical weather trends","Multi-location support"],"technologies":["Flask","Python","OpenWeather API","Google Maps API","JavaScript","HTML5/CSS3"],"github":"https://github.com/vpraneethnadh/Weather-Monitoring","demo":"","image":"../Images/Weather App.jpeg"}'>
+        <div class="project-image-wrapper">
+          <img src="../Images/Weather App.jpeg" alt="Weather App" class="project-image" />
+          <div class="project-overlay">
+            <button class="overlay-btn info-btn" data-project="2">
+              <i class='bx bx-info-circle'></i> More Info
+            </button>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">Weather Monitoring</h3>
+            <span class="project-badge web-badge">Dashboard</span>
+          </div>
+          <p class="project-description">A comprehensive weather dashboard using OpenWeather and Google APIs. Presents daily summaries, thresholds, and visualizations for trends and alerts.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">API Integration</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/vpraneethnadh/Weather-Monitoring" target="_blank" class="action-btn">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+            </div>
+            </div>
+      </article>
+
+      <!-- WBAN Optimization -->
+      <article class="project-card" 
+        data-tags="research,ml" 
+        data-title="wban optimization"
+        data-details='{"title":"WBAN Energy Optimization","category":"Research Project","description":"A research project focused on optimizing energy consumption in Wireless Body Area Networks (WBAN). Compares traditional optimization methods with genetic algorithms to improve network efficiency and battery life in medical monitoring devices.","features":["Genetic algorithm implementation","Energy consumption analysis","Performance comparison (genetic vs non-genetic)","Interactive visualization dashboard","Real-time optimization metrics","Network simulation","Data export capabilities"],"technologies":["Flask","Python","Genetic Algorithms","Data Visualization","JavaScript","Network Simulation"],"github":"https://github.com/vpraneethnadh/WBAN-Optimization","demo":"","image":"../Images/WBAN Optimization.jpeg"}'>
+        <div class="project-image-wrapper">
+          <img src="../Images/WBAN Optimization.jpeg" alt="WBAN Optimization" class="project-image" />
+          <div class="project-overlay">
+            <button class="overlay-btn info-btn" data-project="3">
+              <i class='bx bx-info-circle'></i> More Info
+            </button>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">WBAN Optimization</h3>
+            <span class="project-badge research-badge">Research</span>
+          </div>
+          <p class="project-description">Energy-optimization study for Wireless Body Area Networks. Compares non-genetic vs genetic algorithms and visualizes energy improvements in an interactive demo site.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Genetic Algorithm</span>
+            <span class="tech-tag">Optimization</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/vpraneethnadh/WBAN-Optimization" target="_blank" class="action-btn">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+        </div>
+      </div>
+      </article>
+
+      <!-- Vehicle Theft Detection -->
+      <article class="project-card" 
+        data-tags="ml,tools" 
+        data-title="vehicle theft detection"
+        data-details='{"title":"Vehicle Theft Detection System","category":"ML Security Application","description":"An intelligent security system that uses facial recognition to prevent vehicle theft. When someone attempts to start the vehicle, the system captures their face and compares it with the registered owner. If a mismatch is detected, it immediately sends email alerts with location data.","features":["Real-time face recognition","Automatic owner verification","Email alert system with location","Camera integration","Geolocation tracking","Security logging","Multi-user support"],"technologies":["Python","face_recognition library","OpenCV","geopy","Email API","Computer Vision"],"github":"https://github.com/vpraneethnadh/Vehicle-Theft-Detection","demo":"","image":"../Images/Vehicle Theft Detection Image.jpeg"}'>
+        <div class="project-image-wrapper">
+          <img src="../Images/Vehicle Theft Detection Image.jpeg" alt="Vehicle Theft Detection" class="project-image" />
+          <div class="project-overlay">
+            <button class="overlay-btn info-btn" data-project="4">
+              <i class='bx bx-info-circle'></i> More Info
+            </button>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">Vehicle Theft Detection</h3>
+            <span class="project-badge ml-badge">ML Security</span>
+          </div>
+          <p class="project-description">Smart security system that captures start attempts and compares against owner's face using face_recognition. Sends email alerts with location if mismatch detected.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">face_recognition</span>
+            <span class="tech-tag">Computer Vision</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/vpraneethnadh/Vehicle-Theft-Detection" target="_blank" class="action-btn">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Email to Voice -->
+      <article class="project-card" 
+        data-tags="tools,ml" 
+        data-title="email to voice"
+        data-details='{"title":"Email to Voice Converter","category":"Accessibility Tool","description":"An accessibility-focused application that converts unread emails into speech. Designed to help visually impaired users access their email content through audio. Supports multiple languages and provides a seamless text-to-speech experience.","features":["Multi-language support","Text-to-speech conversion","Unread email detection","Customizable voice settings","Batch email processing","Accessibility features","Email filtering options"],"technologies":["Python","gTTS (Google Text-to-Speech)","Email API","Audio Processing","Accessibility Tools"],"github":"https://github.com/vpraneethnadh/Email-to-Voice","demo":"","image":"../Images/Email text to voice conversion image.jpeg"}'>
+        <div class="project-image-wrapper">
+          <img src="../Images/Email text to voice conversion image.jpeg" alt="Email to Voice" class="project-image" />
+          <div class="project-overlay">
+            <button class="overlay-btn info-btn" data-project="5">
+              <i class='bx bx-info-circle'></i> More Info
+            </button>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">Email to Voice</h3>
+            <span class="project-badge tools-badge">Accessibility</span>
+            </div>
+          <p class="project-description">Accessibility tool that reads unread emails aloud in multiple languages. Built with gTTS for text-to-speech conversion, especially useful for visually impaired users.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">gTTS</span>
+            <span class="tech-tag">Accessibility</span>
+            </div>
+          <div class="project-actions">
+            <a href="https://github.com/vpraneethnadh/Email-to-Voice" target="_blank" class="action-btn">
+              <i class='bx bxl-github'></i> GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+      </div>
+
+    <div id="noResults" class="no-results" style="display:none">
+      <i class='bx bx-search-alt-2'></i>
+      <p>No projects found matching your search.</p>
+    </div>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">
+        <i class='bx bx-x'></i>
+      </button>
+      <div class="modal-body">
+        <div class="modal-image-section">
+          <img id="modalImage" src="" alt="Project Image" class="modal-image" />
+        </div>
+        <div class="modal-info-section">
+          <div class="modal-header">
+            <div>
+              <h2 id="modalTitle" class="modal-title"></h2>
+              <span id="modalCategory" class="modal-category"></span>
+            </div>
+          </div>
+          <p id="modalDescription" class="modal-description"></p>
+          
+          <div class="modal-section">
+            <h3 class="modal-section-title">
+              <i class='bx bx-list-check'></i> Key Features
+            </h3>
+            <ul id="modalFeatures" class="modal-features"></ul>
+          </div>
+
+          <div class="modal-section">
+            <h3 class="modal-section-title">
+              <i class='bx bx-code-alt'></i> Technologies Used
+            </h3>
+            <div id="modalTech" class="modal-tech"></div>
+          </div>
+
+          <div class="modal-actions">
+            <a id="modalGithub" href="#" target="_blank" class="modal-action-btn">
+              <i class='bx bxl-github'></i> View on GitHub
+            </a>
+            <a id="modalDemo" href="#" target="_blank" class="modal-action-btn primary" style="display:none;">
+              <i class='bx bx-link-external'></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Boxicons JS -->
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <!-- Bootstrap Bundle JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"
-  ></script>
-  <!-- Typed.js -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <!-- Carousel Script -->
+  <footer>
+    <div style="max-width:1100px;margin:40px auto 20px;padding:0 20px;color:var(--muted);font-size:14px">
+      © <strong>Praneeth</strong> • Kuppam, India
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const cards = Array.from(document.querySelectorAll('.project-card'));
-      const prevBtn = document.getElementById('prev-project');
-      const nextBtn = document.getElementById('next-project');
-      let current = 0;
+    (function(){
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const searchInput = document.getElementById('projectSearch');
+      const projectCards = Array.from(document.querySelectorAll('.project-card'));
+      const noResults = document.getElementById('noResults');
 
-      // Initialize: Show only first, hide others
-      cards.forEach((c, i) => {
-        c.classList.toggle('active', i === 0);
-        c.style.display = i === 0 ? 'block' : 'none';
-      });
-
-      function goTo(newIndex) {
-        if (newIndex === current) return;
-        cards[current].classList.remove('active');
-        cards[current].style.display = 'none';
-        cards[newIndex].style.display = 'block';
-        cards[newIndex].classList.add('active');
-        current = newIndex;
+      function matchesFilter(card, activeFilter){
+        if(activeFilter === 'all') return true;
+        const tags = (card.dataset.tags || '').split(',').map(s=>s.trim());
+        return tags.includes(activeFilter);
       }
 
-      prevBtn && prevBtn.addEventListener('click', () => {
-        const next = (current - 1 + cards.length) % cards.length;
-        goTo(next);
+      function matchesSearch(card, query){
+        if(!query) return true;
+        const title = (card.dataset.title || '').toLowerCase();
+        const content = card.innerText.toLowerCase();
+        return title.includes(query) || content.includes(query);
+      }
+
+      function applyFilters() {
+        const activeBtn = document.querySelector('.filter-btn.active');
+        const filter = activeBtn ? activeBtn.dataset.filter : 'all';
+        const query = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        projectCards.forEach(card => {
+          const matches = matchesFilter(card, filter) && matchesSearch(card, query);
+          if(matches) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'flex' : 'none';
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          applyFilters();
+        });
       });
-      nextBtn && nextBtn.addEventListener('click', () => {
-        const next = (current + 1) % cards.length;
-        goTo(next);
+
+      searchInput.addEventListener('input', applyFilters);
+      applyFilters();
+    })();
+
+    // Modal functionality
+    (function() {
+      const modal = document.getElementById('projectModal');
+      const modalOverlay = modal.querySelector('.modal-overlay');
+      const modalClose = modal.querySelector('.modal-close');
+      const infoButtons = document.querySelectorAll('.info-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      function openModal(projectData) {
+        document.getElementById('modalImage').src = projectData.image;
+        document.getElementById('modalTitle').textContent = projectData.title;
+        document.getElementById('modalCategory').textContent = projectData.category;
+        document.getElementById('modalDescription').textContent = projectData.description;
+
+        // Features
+        const featuresList = document.getElementById('modalFeatures');
+        featuresList.innerHTML = '';
+        projectData.features.forEach(feature => {
+          const li = document.createElement('li');
+          li.textContent = feature;
+          featuresList.appendChild(li);
+        });
+
+        // Technologies
+        const techContainer = document.getElementById('modalTech');
+        techContainer.innerHTML = '';
+        projectData.technologies.forEach(tech => {
+          const span = document.createElement('span');
+          span.className = 'modal-tech-tag';
+          span.textContent = tech;
+          techContainer.appendChild(span);
+        });
+
+        // Links
+        document.getElementById('modalGithub').href = projectData.github;
+        const demoBtn = document.getElementById('modalDemo');
+        if (projectData.demo) {
+          demoBtn.href = projectData.demo;
+          demoBtn.style.display = 'inline-flex';
+        } else {
+          demoBtn.style.display = 'none';
+        }
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      infoButtons.forEach((btn, index) => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const card = projectCards[index];
+          const details = JSON.parse(card.dataset.details);
+          openModal(details);
+        });
       });
-    });
+
+      modalClose.addEventListener('click', closeModal);
+      modalOverlay.addEventListener('click', closeModal);
+
+      // Close on Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeModal();
+        }
+      });
+    })();
   </script>
 </body>
 </html>
-
-
-
-
