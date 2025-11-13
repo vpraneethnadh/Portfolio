@@ -1,54 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Portfolio</title>
-    <link rel="icon" href="../Images/shield-plus-regular-24.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/contact.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init({
-            publicKey: "JSMOXt5nWX_U7fqDp",
-          });
-       })();
-    </script>
-    <script src="./js/contact.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Me — Praneeth</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
+  <header class="header">
+    <a href="../index.html" class="logo">Portfolio<span style="color:var(--accent)"></span></a>
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="publications.html">Publications</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-    <header class="header">
-        <a href="../index.html" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="../index.html" style="--i: 1;" class="active">Home</a>
-            <a href="./about.html" style="--i: 2;">About</a>
-            <a href="./project.html" style="--i: 3;">Projects</a>
-            <a href="./contact.html" style="--i: 4;">Contact</a>
-        </nav>
-    </header>
+  <main class="contact-container">
+    <div class="contact-header">
+      <h1 class="contact-title">Get In Touch</h1>
+      <p class="contact-subtitle">Have a project in mind or just want to chat? I'd love to hear from you. Send me a message and I'll respond as soon as possible.</p>
+    </div>
 
-    <section class="contact">
-        <div class="contact-info">
-            <h1>Contact Me</h1>
-            <p>If you have any questions, feel free to reach out to me using the form below.</p>
-            <div class="contact-details">
-                <p><strong>Phone:</strong> +91 95732 67424</p>
-                <p><strong>Email:</strong> vpraneethnadh@gmail.com</p>
+    <div class="contact-wrapper">
+      <!-- Contact Info Section -->
+      <div class="contact-info-section">
+        <div class="info-card">
+          <div class="info-icon">
+            <i class='bx bx-envelope'></i>
+          </div>
+          <div class="info-content">
+            <h3>Email</h3>
+            <a href="mailto:vpraneethnadh@gmail.com">vpraneethnadh@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <i class='bx bx-phone'></i>
+          </div>
+          <div class="info-content">
+            <h3>Phone</h3>
+            <a href="tel:+919573267424">+91 95732 67424</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">
+            <i class='bx bx-map'></i>
+          </div>
+          <div class="info-content">
+            <h3>Location</h3>
+            <p>Kuppam, India</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h3>Connect With Me</h3>
+          <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/vpraneethnadh/" target="_blank" class="social-btn">
+              <i class='bx bxl-linkedin'></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/vpraneethnadh" target="_blank" class="social-btn">
+              <i class='bx bxl-github'></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/vpraneeth_1016?igsh=eDBoM29lZ3gzMmFt" target="_blank" class="social-btn">
+              <i class='bx bxl-instagram'></i>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="contact-form-section">
+        <div class="form-card">
+          <div class="form-header">
+            <h2>Send a Message</h2>
+            <p>Fill out the form below and I'll get back to you</p>
+          </div>
+
+          <div id="formMessage" class="form-message" style="display:none;"></div>
+
+          <form method="POST" action="../send_email.php" id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">
+                <i class='bx bx-user'></i> Your Name
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                name="from_name" 
+                placeholder="John Doe" 
+                required
+                autocomplete="name"
+              />
             </div>
-        </div>
 
-        <div class="contact-form">
-            <form>
-                <input type="text" name="from_name" placeholder="Enter your name" required>
-                <input type="email" name="email_id" placeholder="Enter your email" required>
-                <textarea name="Message" placeholder="Your message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+            <div class="form-group">
+              <label for="email">
+                <i class='bx bx-envelope'></i> Your Email
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email_id" 
+                placeholder="john@example.com" 
+                required
+                autocomplete="email"
+              />
+            </div>
 
+            <div class="form-group">
+              <label for="message">
+                <i class='bx bx-message'></i> Message
+              </label>
+              <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Tell me about your project or just say hello..." 
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <i class='bx bx-send btn-icon'></i>
+            </button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>© <strong>Praneeth</strong> • Kuppam, India</p>
+      </div>
+      <div class="footer-right">
+        <p>Built with passion • Open to opportunities</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script>
+    // Check for success/error message in URL
+    (function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const message = urlParams.get('message');
+      const formMessage = document.getElementById('formMessage');
+      
+      if (message === 'success') {
+        formMessage.className = 'form-message success';
+        formMessage.innerHTML = '<i class="bx bx-check-circle"></i> Message sent successfully! I\'ll get back to you soon.';
+        formMessage.style.display = 'block';
+        
+        // Clear URL
+        window.history.replaceState({}, document.title, window.location.pathname);
+        
+        // Scroll to message
+        formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        
+        // Hide after 5 seconds
+        setTimeout(() => {
+          formMessage.style.display = 'none';
+        }, 5000);
+      } else if (message === 'error') {
+        formMessage.className = 'form-message error';
+        formMessage.innerHTML = '<i class="bx bx-error-circle"></i> Something went wrong. Please try again or email me directly.';
+        formMessage.style.display = 'block';
+        
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    })();
+
+    // Form submission handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      const submitBtn = document.getElementById('submitBtn');
+      const btnText = submitBtn.querySelector('.btn-text');
+      const btnIcon = submitBtn.querySelector('.btn-icon');
+      
+      // Disable button and show loading state
+      submitBtn.disabled = true;
+      btnText.textContent = 'Sending...';
+      btnIcon.className = 'bx bx-loader-alt btn-icon spinning';
+    });
+  </script>
 </body>
 </html>
